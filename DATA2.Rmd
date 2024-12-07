@@ -1,0 +1,25 @@
+---
+title: "Last project edition 2"
+author: "Ana Solorza"
+date: "2024-12-07"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+
+library(tidyr)
+library(janitor)
+
+
+levels(Loblolly$Seed)
+seedcolors <- c("black","red","orange","yellow","lightgreen","darkgreen","darkblue","lightblue","lavender","purple","violet"
+                ,"lightpink","beige","gray")
+ data("Loblolly")
+plot(Loblolly$height~Loblolly$age,
+     col= seedcolors[Loblolly$Seed],
+     xlab="Age",
+     ylab="height",
+     pch=19)
+```
+
+
