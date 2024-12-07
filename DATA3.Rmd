@@ -1,0 +1,35 @@
+---
+title: "DATA 3 SET"
+author: "Ana Solorza"
+date: "2024-12-07"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+
+library(tidyr)
+library(janitor)
+
+data("Loblolly")
+plot(Loblolly$height~Loblolly$age,
+     col= seedcolors[Loblolly$Seed],
+      xlab="Age",
+     ylab="Height",
+     pch=19)
+lines(Loblolly$age[Loblolly$Seed=="329"], Loblolly$height[Loblolly$Seed=="329"], col = "black")
+lines(Loblolly$age[Loblolly$Seed=="327"], Loblolly$height[Loblolly$Seed=="327"], col = "red")
+lines(Loblolly$age[Loblolly$Seed=="325"], Loblolly$height[Loblolly$Seed=="325"], col = "orange")
+lines(Loblolly$age[Loblolly$Seed=="307"], Loblolly$height[Loblolly$Seed=="307"], col = "yellow")
+lines(Loblolly$age[Loblolly$Seed=="331"], Loblolly$height[Loblolly$Seed=="331"], col = "lightgreen")
+lines(Loblolly$age[Loblolly$Seed=="311"], Loblolly$height[Loblolly$Seed=="311"], col = "darkgreen")
+lines(Loblolly$age[Loblolly$Seed=="315"], Loblolly$height[Loblolly$Seed=="315"], col = "darkblue")
+lines(Loblolly$age[Loblolly$Seed=="321"], Loblolly$height[Loblolly$Seed=="321"], col = "lightblue")
+lines(Loblolly$age[Loblolly$Seed=="319"], Loblolly$height[Loblolly$Seed=="319"], col = "lavender")
+lines(Loblolly$age[Loblolly$Seed=="323"], Loblolly$height[Loblolly$Seed=="323"], col = "purple")
+lines(Loblolly$age[Loblolly$Seed=="309"], Loblolly$height[Loblolly$Seed=="309"], col = "violet")
+lines(Loblolly$age[Loblolly$Seed=="303"], Loblolly$height[Loblolly$Seed=="303"], col = "lightpink")
+lines(Loblolly$age[Loblolly$Seed=="305"], Loblolly$height[Loblolly$Seed=="305"], col = "beige")
+lines(Loblolly$age[Loblolly$Seed=="301"], Loblolly$height[Loblolly$Seed=="301"], col = "gray")
+```
+
+
