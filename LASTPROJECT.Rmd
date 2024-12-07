@@ -9,5 +9,5 @@ output: html_notebook
 This is my practice notebook 
 
 ```{r}
-plot (mtcars$mpg, mtcars$wt)
+plot (mtcars$mpg, mtcars$disp)
 ```
